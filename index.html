@@ -11,32 +11,32 @@
 <body>
     <div class="container">
         <h1>GET IN TOUCH</h1>
-        <p>Have any questions or suggestions? Drop us a message</p>
-        <form>
+        <p>Have any Complaints or suggestions? Drop us a message</p>
+        <form input="save.php" method="POST">
             <div class="row">
                 <div class="column">
                     <label for="name">Name</label>
-                    <input type="text" id="name" placeholder="Your name here">
+                    <input type="text" id="name" placeholder="Your name here" name="name">
                 </div>
                 <div class="column">
                     <label for="email">Email</label>
-                    <input type="email" id="email" placeholder="Your email here">
+                    <input type="email" id="email" placeholder="Your email here" name="email">
                 </div>
             </div>
             <div class="row">
                 <div class="column">
                     <label for="subject">Subject</label>
-                    <input type="text" id="subject" placeholder="Your subject here">
+                    <input type="text" id="subject" placeholder="Your subject here" name="subject">
                 </div>
                 <div class="column">
                     <label for="contact">Contact Number</label>
-                    <input type="tel" id="contact" placeholder="Your phone number here">
+                    <input type="tel" id="contact" placeholder="Your phone number here" name="contactNumber">
                 </div>
             </div>
             <div class="row">
                 <div class="column">
                     <label for="issue">Message/Issues</label>
-                    <textarea id="issue" placeholder="Describe your Message/issue in detail here" rows="3"></textarea>
+                    <textarea id="issue" placeholder="Describe your Message/issue in detail here" rows="3" name="issue"></textarea>
                 </div>
             </div>
             <button>Submit</button>
