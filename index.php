@@ -89,7 +89,14 @@
                 </div>
             </div>
             <button>Submit</button>
-            <button id="LogIn">LogIn</button>
+            <a href="www.google.com">
+                <button id="LogIn">LogIn</button>
+            </a>
+            <?php
+
+echo '<input type="button"  onclick="window.location=\'http://youtube.com/techgeekshan\'" />';
+
+?>
         </form>
     </div>
 </body>
