@@ -6,7 +6,7 @@
     <!--Google Font-->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
     <!--Stylesheet-->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="adminStyle.css">
 </head>
 
 
@@ -16,6 +16,7 @@
         <h1>DataBase View</h1>
         <p>Showing data from contactUsTable</p>
         <table>
+            <thead>
             <tr>
             <th>ID</th>
             <th>Name</th>
@@ -25,7 +26,8 @@
             <th>Message/ Issue</th>
 
             </tr>
-            
+        </thead>
+        <tbody>
             <?php
                 $server = "localhost";
                 $username = "root";
@@ -45,7 +47,7 @@
                 }
                 $con->close();
             ?>
-            
+            </tbody>
         </table>
 
     </div>
