@@ -16,10 +16,13 @@
         $subject=$_POST['subject'];
         $contactNumber=$_POST['contactNumber'];
         $issue=$_POST['issue'];
-        $sql= "INSERT INTO `contactus`.`contactustable` (`name`, `email`, `subject`, `contactNumber`, `issue`)
-         VALUES ('$name', '$email', '$subject', '$contactNumber', '$issue');";
-        //echo "<h1>Successfully Insertion of SQL to DB<h1><br>";
-        //echo $sql;
+        if($name!=""){
+            $sql= "INSERT INTO `contactus`.`contactustable` (`name`, `email`, `subject`, `contactNumber`, `issue`)
+            VALUES ('$name', '$email', '$subject', '$contactNumber', '$issue');";
+           //echo "<h1>Successfully Insertion of SQL to DB<h1><br>";
+           //echo $sql;
+        }
+       
 
         if($con->query($sql) == true){//here -> means object operator
             //echo "Data successfully inserted to db";
@@ -50,9 +53,11 @@
 <body>
     <div class="container">
         <h1>GET IN TOUCH</h1>
+        
         <?php
         if($submitted==false){
             echo "<p>Have any Complaints or suggestions? Drop us a message</p>";
+            echo "<p><a href='admin.php'>LoginAsAdmin</a></p>";
         }
         else if($submitted==true){
             echo "<p><b>Thanks For Contacting US</b></p>";
@@ -89,14 +94,15 @@
                 </div>
             </div>
             <button>Submit</button>
-            <a href="www.google.com">
-                <button id="LogIn">LogIn</button>
-            </a>
+            
+            
+            
             <?php
+         //echo '<input type="button" id="LogIn" onclick="window.location=\'admin.html\'" />';
+        //echo '<input type="button"  onclick="window.location=\'http://youtube.com/techgeekshan\'" />';
+        //<button id="LogIn">LogIn</button>
 
-echo '<input type="button"  onclick="window.location=\'http://youtube.com/techgeekshan\'" />';
-
-?>
+    ?>
         </form>
     </div>
 </body>
