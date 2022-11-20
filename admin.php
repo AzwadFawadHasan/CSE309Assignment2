@@ -12,10 +12,11 @@
 
 
 <body>
-    <div class="container">
-        <h1>DataBase View</h1>
-        <p>Showing data from contactUsTable</p>
-        <table>
+    <div class="outerContainer">
+    <div class="table-container">
+        <h1 class = "heading">DataBase View</h1>
+        <p class = "heading">Showing data from contactUsTable</p>
+        <table class="table">
             <thead>
             <tr>
             <th>ID</th>
@@ -39,7 +40,7 @@
                 $result=$con->query($sql);
                 if($result->num_rows >0){
                     while($row = $result->fetch_assoc()){
-                        echo "<tr><td>" .$row["id"]. "</td><td> " . $row["name"]."</td><td> ". $row["email"]."</td><td> ". $row["subject"]."</td><td> ". $row["contactNumber"]."</td><td> ".$row["issue"]."</td><tr> ";
+                        echo "<tr><td data-label='id'>" .$row["id"]. "</td><td data-label='name'> " . $row["name"]."</td><td data-label='email'> ". $row["email"]."</td><td data-label='subject'> ". $row["subject"]."</td><td data-label='Contact Number'> ". $row["contactNumber"]."</td><td data-label='Message/Issues'> ".$row["issue"]."</td><tr> ";
                     }
                     
                 }else{
@@ -51,5 +52,8 @@
         </table>
 
     </div>
+
+    </div>
+    
 </body>
 </html>
