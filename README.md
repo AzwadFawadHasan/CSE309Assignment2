@@ -8,3 +8,14 @@ This repo contains  a responsive contact us form.
 
 
 Admin panel's user name and password can be pre-defined and stored in the database manually. 
+
+# How To Open The Project
+install XAMPP
+Go To htdocs folder inside c:\\xampp
+clone the project inside htdocs directory
+open localhost
+Done!
+
+## Pictures
+![Alt text](pictures/ContactUsPage.PNG)
+![Alt text](pictures/LoginAsAdminPage.PNG)![Alt text](pictures/adminHomepageAfterLogginInSuccessfully.PNG)![Alt text](pictures/contactUsDatabaseContactUsTable.PNG)![Alt text](pictures/contactUsDatabaseContactUsTable.PNG)
