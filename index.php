@@ -57,7 +57,7 @@
         <?php
         if($submitted==false){
             echo "<p>Have any Complaints or suggestions? Drop us a message</p>";
-            echo "<p><a href='admin.php'>LoginAsAdmin</a></p>";
+            echo "<p><a href='login.php'>LoginAsAdmin</a></p>";
         }
         else if($submitted==true){
             echo "<p><b>Thanks For Contacting US</b></p>";
