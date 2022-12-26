@@ -1,5 +1,5 @@
 # CSE309Assignment2
-This repo contains  a responsive contact us form.
+This repo contains  a responsive contact us form made using PHP and mySQL
 # Task
 1. Create a responsive contact us form.
 2. Send the contact us form's data to database.
